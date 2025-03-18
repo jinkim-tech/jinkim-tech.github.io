@@ -1,0 +1,56 @@
+/* Basic clean styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Add hover effects for links */
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #666;
+}
+
+/* Add some spacing for the skills list */
+#skills ul {
+    padding-left: 20px;
+}
+
+#skills li {
+    margin-bottom: 5px;
+} 
