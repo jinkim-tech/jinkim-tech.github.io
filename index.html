@@ -3,124 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jin Kim - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jin Kim | Senior Data Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .btn-group a {
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: white;
+            color: #2a5298;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-group a:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2a5298;
+        }
+        .skills, .projects, .experience, .blog, .contact {
+            margin-bottom: 40px;
+        }
+        .tech-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .tech-icons i {
+            font-size: 2rem;
+            margin: 10px;
+            color: #2a5298;
+            transition: transform 0.3s ease;
+        }
+        .tech-icons i:hover {
+            transform: scale(1.2);
+        }
+        .project, .job, .blog-post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .project:hover, .job:hover, .blog-post:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2a5298;
+            color: white;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .tech-tag {
+            background: #f0f4f8;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            color: #2a5298;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header class="intro">
-            <div class="profile">
-                <div class="profile-image">
-                    <!-- Placeholder for profile image -->
-                    <div class="placeholder-image"></div>
-                </div>
-                <div class="profile-content">
-                    <h1>Hi, I'm Jin Kim</h1>
-                    <h2>Senior Data Engineer at [Your Company]</h2>
-                    <div class="profile-links">
-                        <a href="#" class="button">GitHub</a>
-                        <a href="#" class="button">LinkedIn</a>
-                        <a href="#" class="button">Resume</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <header>
+        <h1>Jin Kim</h1>
+        <p>Senior Data Engineer</p>
+        <div class="btn-group">
+            <a href="https://github.com/yourusername">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+            <a href="#">Resume</a>
+        </div>
+    </header>
 
-        <section class="section" id="about">
-            <h2>About Me</h2>
-            <p>I'm a senior data engineer with expertise in distributed systems, data processing frameworks, cloud platforms, and analytics. I specialize in building scalable data solutions and optimizing data pipelines.</p>
-        </section>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I'm a senior data engineer specializing in distributed systems, data processing frameworks, cloud platforms, and analytics. I focus on building scalable data solutions and optimizing data pipelines for large-scale systems.</p>
+    </section>
 
-        <section class="section" id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">SQL</div>
-                        <div class="skill-item">Java</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Spark</div>
-                        <div class="skill-item">Airflow</div>
-                        <div class="skill-item">Kafka</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud/DB</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">AWS</div>
-                        <div class="skill-item">Snowflake</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Others</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Docker</div>
-                        <div class="skill-item">CI/CD</div>
-                        <div class="skill-item">Git</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="skills">
+        <h2>Skills & Tech Stack</h2>
+        <div class="tech-icons">
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fas fa-database" title="SQL"></i>
+            <i class="fab fa-aws" title="AWS"></i>
+            <i class="fab fa-java" title="Java"></i>
+            <i class="fas fa-server" title="Kafka"></i>
+            <i class="fas fa-cube" title="Docker"></i>
+        </div>
+        <div class="tech-stack" style="text-align: center;">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spark</span>
+            <span class="tech-tag">Kafka</span>
+            <span class="tech-tag">Airflow</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Snowflake</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">CI/CD</span>
+        </div>
+    </section>
 
-        <section class="section" id="projects">
-            <h2>Highlighted Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Real-Time Data Pipeline</h3>
-                    <p>Implemented a streaming data pipeline using Kafka and Spark for real-time analytics</p>
-                    <div class="project-tech">
-                        <span>Kafka</span>
-                        <span>Spark</span>
-                        <span>Python</span>
-                    </div>
-                    <a href="#" class="button">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>ETL Workflow Automation</h3>
-                    <p>Developed an automated ETL pipeline with Airflow to process and transform data</p>
-                    <div class="project-tech">
-                        <span>Airflow</span>
-                        <span>Snowflake</span>
-                        <span>SQL</span>
-                    </div>
-                    <a href="#" class="button">View on GitHub</a>
-                </div>
+    <section class="projects">
+        <h2>Highlighted Projects</h2>
+        <div class="project">
+            <h3>Real-Time Data Pipeline</h3>
+            <p>Implemented a streaming data pipeline using Kafka and Spark for real-time analytics.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Kafka</span>
+                <span class="tech-tag">Spark</span>
+                <span class="tech-tag">Python</span>
             </div>
-        </section>
+        </div>
+        <div class="project">
+            <h3>ETL Workflow Automation</h3>
+            <p>Developed an automated ETL pipeline with Airflow to process and transform data efficiently.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Airflow</span>
+                <span class="tech-tag">Snowflake</span>
+                <span class="tech-tag">SQL</span>
+            </div>
+        </div>
+    </section>
 
-        <section class="section" id="experience">
-            <h2>Work Experience</h2>
-            <div class="experience-item">
-                <h3>[Your Company]</h3>
-                <p class="job-title">Senior Data Engineer</p>
-                <ul>
-                    <li>Designed and maintained data pipelines for large-scale data processing</li>
-                    <li>Reduced data latency by 30% through optimized ETL processes</li>
-                </ul>
-            </div>
-        </section>
+    <section class="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Senior Data Engineer</h3>
+            <p>• Designed and maintained data pipelines for large-scale data processing</p>
+            <p>• Reduced data latency by 30% through optimized ETL processes</p>
+        </div>
+    </section>
 
-        <section class="section" id="blogs">
-            <h2>Blogs</h2>
-            <div class="blog-links">
-                <a href="#">Data Modeling at Scale</a>
-                <a href="#">Debugging Kafka Streams</a>
-            </div>
-        </section>
+    <section class="blog">
+        <h2>Latest Writing</h2>
+        <div class="blog-post">
+            <h3>Data Modeling at Scale</h3>
+            <p>Insights and best practices for designing scalable data models. <a href="#">Read More</a></p>
+        </div>
+        <div class="blog-post">
+            <h3>Debugging Kafka Streams</h3>
+            <p>A practical guide to troubleshooting Kafka stream processing. <a href="#">Read More</a></p>
+        </div>
+    </section>
 
-        <section class="section" id="contact">
-            <h2>Contact</h2>
-            <p>your.email@example.com</p>
-            <div class="social-links">
-                <a href="#" class="button">LinkedIn</a>
-            </div>
-        </section>
-    </div>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Find me on <a href="https://linkedin.com/in/yourusername">LinkedIn</a> or <a href="https://github.com/yourusername">GitHub</a></p>
+    </section>
+
+    <footer>
+        &copy; 2024 Jin Kim. All rights reserved.
+    </footer>
 </body>
 </html> 
