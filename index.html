@@ -7,51 +7,119 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Jin Kim</h1>
-            <p>Data Nerd | Analyst | Senior Data Engineer</p>
-        </div>
-    </header>
-
     <div class="container">
+        <header class="intro">
+            <div class="profile">
+                <div class="profile-image">
+                    <!-- Placeholder for profile image -->
+                    <div class="placeholder-image"></div>
+                </div>
+                <div class="profile-content">
+                    <h1>Hi, I'm Jin Kim</h1>
+                    <h2>Senior Data Engineer at [Your Company]</h2>
+                    <div class="profile-links">
+                        <a href="#" class="button">GitHub</a>
+                        <a href="#" class="button">LinkedIn</a>
+                        <a href="#" class="button">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <section class="section" id="about">
             <h2>About Me</h2>
-            <p>Write a brief introduction about yourself, your skills, and what you're passionate about.</p>
-        </section>
-
-        <section class="section" id="projects">
-            <h2>Projects</h2>
-            
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of your first project. What you did, technologies used, and the outcome.</p>
-                <a href="#">View Project</a>
-            </div>
-
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of your second project. What you did, technologies used, and the outcome.</p>
-                <a href="#">View Project</a>
-            </div>
+            <p>I'm a senior data engineer with expertise in distributed systems, data processing frameworks, cloud platforms, and analytics. I specialize in building scalable data solutions and optimizing data pipelines.</p>
         </section>
 
         <section class="section" id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>Add more skills...</li>
-            </ul>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">Java</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Spark</div>
+                        <div class="skill-item">Airflow</div>
+                        <div class="skill-item">Kafka</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud/DB</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">AWS</div>
+                        <div class="skill-item">Snowflake</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">CI/CD</div>
+                        <div class="skill-item">Git</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <p>Email: your.email@example.com</p>
-            <p>
-                <a href="https://github.com/yourusername">GitHub</a> |
-                <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-            </p>
+        <section class="section" id="projects">
+            <h2>Highlighted Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Real-Time Data Pipeline</h3>
+                    <p>Implemented a streaming data pipeline using Kafka and Spark for real-time analytics</p>
+                    <div class="project-tech">
+                        <span>Kafka</span>
+                        <span>Spark</span>
+                        <span>Python</span>
+                    </div>
+                    <a href="#" class="button">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>ETL Workflow Automation</h3>
+                    <p>Developed an automated ETL pipeline with Airflow to process and transform data</p>
+                    <div class="project-tech">
+                        <span>Airflow</span>
+                        <span>Snowflake</span>
+                        <span>SQL</span>
+                    </div>
+                    <a href="#" class="button">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>[Your Company]</h3>
+                <p class="job-title">Senior Data Engineer</p>
+                <ul>
+                    <li>Designed and maintained data pipelines for large-scale data processing</li>
+                    <li>Reduced data latency by 30% through optimized ETL processes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="blogs">
+            <h2>Blogs</h2>
+            <div class="blog-links">
+                <a href="#">Data Modeling at Scale</a>
+                <a href="#">Debugging Kafka Streams</a>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact</h2>
+            <p>your.email@example.com</p>
+            <div class="social-links">
+                <a href="#" class="button">LinkedIn</a>
+            </div>
         </section>
     </div>
 </body>
